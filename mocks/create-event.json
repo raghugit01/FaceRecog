@@ -1,0 +1,8 @@
+{
+  "body": "{\"content\":\"team outing\",\"images\":\"hello.jpg\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "DUMMY-USER"
+    }
+  }
+}
