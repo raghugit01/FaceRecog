@@ -1,0 +1,11 @@
+{
+  "body": "{\"content\":\"team outing 5\",\"images\":\"yes.jpg\"}",
+  "pathParameters": {
+    "id": "336590f0-2c20-11e8-9956-4b761e4360e4"
+  },
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "DUMMY_USER"
+    }
+  }
+}

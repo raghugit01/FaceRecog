@@ -6,7 +6,7 @@ export const failure = (body) => {
   return buildResponse(500, body);
 }
 
-const buildResponse = (statusCode, body) {
+const buildResponse = (statusCode, body) => {
   return {
     statusCode: statusCode,
     headers: {
