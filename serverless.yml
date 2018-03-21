@@ -66,10 +66,10 @@ functions:
     handler: create.main
     events:
       - http:
-        path: events
-        method: post
-        cors: true
-        authorizer: aws_iam
+          path: events
+          method: post
+          cors: true
+          authorizer: aws_iam
 
   get:
     handler: get.main
@@ -84,19 +84,28 @@ functions:
     handler: list.main
     events:
       - http:
-        path: events
-        method: get
-        cors: true
-        authorizer: aws_iam
+          path: events
+          method: get
+          cors: true
+          authorizer: aws_iam
 
   update:
     handler: update.main
     events:
       - http:
-        path: events/{id}
-        method: put
-        cors: true
-        authorizer: aws_iam
+          path: events/{id}
+          method: put
+          cors: true
+          authorizer: aws_iam
+
+  delete:
+    handler: delete.main
+    events:
+      - http:
+          path: events/{id}
+          method: delete
+          cors: true
+          authorizer: aws_iam
 
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
