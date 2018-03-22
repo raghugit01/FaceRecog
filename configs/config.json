@@ -1,0 +1,44 @@
+{
+  Pool Id eu-west-1_NdWiSiF6g
+  Pool ARN arn:aws:cognito-idp:eu-west-1:898594748181:userpool/eu-west-1_NdWiSiF6g
+}
+{
+  app-client: event-creating-app
+  App client id: 3agnteu724s3oukl18nbbtcgfu
+}
+
+{
+  username: admin@example.com
+  password: Passw0rd!
+}
+
+eventId: 336590f0-2c20-11e8-9956-4b761e4360e4
+
+{
+erverless: Stack update finished...
+Service Information
+service: event-creator-api
+stage: prod
+region: eu-west-1
+stack: event-creator-api-prod
+api keys:
+None
+endpoints:
+POST - https://kgge7k4kn4.execute-api.eu-west-1.amazonaws.com/prod/events
+GET - https://kgge7k4kn4.execute-api.eu-west-1.amazonaws.com/prod/events/{id}
+GET - https://kgge7k4kn4.execute-api.eu-west-1.amazonaws.com/prod/events
+PUT - https://kgge7k4kn4.execute-api.eu-west-1.amazonaws.com/prod/events/{id}
+DELETE - https://kgge7k4kn4.execute-api.eu-west-1.amazonaws.com/prod/events/{id}
+functions:
+create: event-creator-api-prod-create
+get: event-creator-api-prod-get
+list: event-creator-api-prod-list
+update: event-creator-api-prod-update
+delete: event-creator-api-prod-delete
+
+}
+
+{
+Identity pool ID
+eu-west-1:79fb3fc5-a657-4ef4-8c44-5d7f01d0079a
+}
