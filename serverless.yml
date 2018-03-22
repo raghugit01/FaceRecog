@@ -38,6 +38,11 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:eu-west-1:*:*"
+
+#    - Effect: "Allow"
+#      Action:
+#        - "s3:*"
+#      Resource: "arn:aws:s3:::eventcreator/*
 #    - Effect: "Allow"
 #      Action:
 #        - "s3:PutObject"
@@ -143,10 +148,22 @@ functions:
 # you can add CloudFormation resource templates here
 #resources:
 #  Resources:
-#    NewResource:
+#    UploadBucket:
 #      Type: AWS::S3::Bucket
 #      Properties:
-#        BucketName: my-new-bucket
+#        BucketName: eventcreator
+#        AccessControl: PublicRead
+#        CorsConfiguration:
+#          CorsRules:
+#          - AllowedMethods:
+#            - GET
+#            - PUT
+#            - POST
+#            - HEAD
+#            AllowedOrigins:
+#            - "*"
+#            AllowedHeaders:
+#            - "*"
 #  Outputs:
 #     NewOutput:
 #       Description: "Description for the output"
